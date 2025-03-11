@@ -1,0 +1,149 @@
+.filter-container {
+  width: 400px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filter-card {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.filter-title {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: #f1f3f5;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-btn input {
+  display: none;
+}
+
+.filter-btn input:checked + label {
+  background: #6366f1;
+  color: white;
+}
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.blue {
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.brown {
+  background: brown;
+}
+
+.purple {
+  background: purple;
+}
+
+.apply-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #007bff 50%, #ddd 50%);
+  outline: none;
+  transition: background 0.3s;
+}
+
+/* Customizing the thumb (slider button) */
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #6366f1;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.form-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+/* Changing the fill color dynamically */
+.form-range:focus {
+  outline: none;
+}
+
+.form-range:active::-webkit-slider-thumb {
+  background-color: #6366f1;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Dynamic color change while sliding */
+.form-range::-moz-range-progress {
+  background: #6366f1;
+  height: 6px;
+}
+
+.form-range::-moz-range-track {
+  background: #ddd;
+  height: 6px;
+}
