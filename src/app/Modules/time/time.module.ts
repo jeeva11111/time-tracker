@@ -20,9 +20,12 @@ import {MatButtonModule} from "@angular/material/button";
     FormsModule,
     MatDialogModule,
     MatButtonModule,
-  
+
 
   ]
 })
 export class TimeModule {
 }
+
+
+
