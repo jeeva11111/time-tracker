@@ -1,0 +1,27 @@
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  th {
+    background-color: #6366f1; /* Deep Purple */
+    color: white;
+    padding: 12px;
+    text-align: left;
+  }
+
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #EDE7F6; /* Light Purple */
+  }
+
+  tr:hover {
+    background-color: #D1C4E9; /* Soft Purple */
+  }
+}

@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-center align-items-center" style="background-color: #eef2ff">
+
+  <div class="glass-card p-4 shadow-lg rounded " style="background-color: #e5e7eb">
+    <!-- Header Section -->
+    <div class="header-card d-flex justify-content-between align-items-center">
+      <span>Details</span>
+      <div>
+        <i class="bi bi-arrows-fullscreen icon-btn"></i>
+        <i class="bi bi-phone icon-btn"></i>
+      </div>
+    </div>
+    <hr/>
+    <!-- User Profile -->
+    <div>
+      <span class="section-title"><i class="bi bi-person-fill"></i> Working Hours</span>
+      <div class="d-flex align-items-center mt-2">
+        <div class="profile-icon">W</div>
+        <div class="ms-2">
+          <div>Total working</div>
+          <div class="info-text">{{ timeResult?.workingHours == '' || null ? "" : timeResult?.workingHours }}</div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <!-- Assignee Section -->
+    <div>
+      <span class="section-title"><i class="bi bi-person-check-fill"></i> Break Hours</span>
+      <div class="d-flex align-items-center mt-2">
+        <div class="profile-icon" style="background-color: #7986cb;">B</div>
+        <div class="ms-2">
+          <div>Total breaks</div>
+          <div>{{ timeResult?.breakHours == '' || null ? "" : timeResult?.breakHours }}</div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div>
+      <span class="section-title"><i class="bi bi-person-check-fill"></i> office Hours</span>
+      <div class="d-flex align-items-center mt-2">
+        <div class="profile-icon" style="background-color: #7986cb;">F</div>
+        <div class="ms-2">
+          <div>Total office Hours</div>
+          <div>{{ timeResult?.officeHours == '' || null ? "" : timeResult?.officeHours }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
